@@ -1,3 +1,5 @@
+
+/*    VARIABLES CSS   */
 :root {
     --primary-color: #fc7120;
     --secondary-color: #355c5c;
@@ -6,6 +8,8 @@
     --orange-answers: #fc712017;
 }
 
+
+/*    LAYOUT GLOBAL   */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, var(--secondary-color), #ff995e);
@@ -31,6 +35,8 @@ body {
     animation: fadeIn 0.8s ease-in-out;
 }
 
+
+/*       TITRES / TEXTES     */
 h1, h2, h3 {
     color: var(--secondary-color);
     transition: color 0.3s ease;
@@ -58,6 +64,8 @@ p {
     text-align: justify;
 }
 
+
+/*       BOUTONS      */
 button {
     width: max-content;
     font-size: 20px;
@@ -76,12 +84,17 @@ button:hover {
     transform: scale(1.05);
 }
 
-.question-image {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 8px;
-    animation: fadeIn 1s ease-in-out;
+.start-btn {
+    display: block;
+}
+
+
+/*   ÉLÉMENTS DU QUIZ */
+.quiz-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .answer-option {
@@ -103,21 +116,71 @@ input[type="radio"] {
     margin-right: 20px;
 }
 
+.question-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.timer-warning {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: -10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*  TABLEAU DE SCORES */
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-table thead {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.score-table th,
+.score-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.score-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.score-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/*     ANIMATIONS     */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-.start-btn {
-    display: block;
-}
-
-.quiz-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 @keyframes rainbow {
     0% { color: red; }
     14% { color: orange; }
@@ -131,51 +194,4 @@ input[type="radio"] {
 
 .rainbow-text:hover {
     animation: rainbow 2s linear infinite;
-}
-
-.timer {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--secondary-color);
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    align-self: flex-start;
-  }
-  
-  .timer-warning {
-    color: #d9534f;
-    font-weight: 600;
-    margin-top: -10px;
-    animation: fadeIn 0.5s ease-in-out;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .score-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.score-table thead {
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-.score-table th, .score-table td {
-    padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.score-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.score-table tr:hover {
-    background-color: #f1f1f1;
 }
