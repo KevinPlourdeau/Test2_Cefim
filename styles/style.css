@@ -195,3 +195,76 @@ input[type="radio"] {
 .rainbow-text:hover {
     animation: rainbow 2s linear infinite;
 }
+
+
+/*    MEDIA QUERIES   */
+@media (max-width: 720px) {
+    .container {
+        padding: 30px;
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .quiz-form {
+        gap: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .timer {
+        font-size: 16px;
+    }
+
+    .answer-option {
+        padding: 8px;
+    }
+
+    .score-table th, .score-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
