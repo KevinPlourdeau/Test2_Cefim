@@ -3,9 +3,7 @@ let score = 0;
 let timerInterval;
 const timePerQuestion = 20; // secondes
 
-const correctSound = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_a4cf6e7bfb.mp3");
-const wrongSound = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_8ffb34f6b2.mp3");
-const timeoutSound = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_148906dc70.mp3");
+
 
 function startQuiz() {
   currentQuestion = 0;
@@ -13,7 +11,12 @@ function startQuiz() {
   showQuestion();
 }
 
-document.getElementById("start-btn").addEventListener("click", startQuiz);
+document.addEventListener("DOMContentLoaded", () => {
+  const startBtn = document.getElementById("start-btn");
+  if (startBtn) {
+    startBtn.addEventListener("click", startQuiz);
+  }
+});
 
 function showQuestion() {
   clearInterval(timerInterval);
@@ -42,7 +45,7 @@ function showQuestion() {
     if (timeLeft === 10) warningMsg.style.display = "block";
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
-      timeoutSound.play();
+      
       validateAnswer(true); // auto validation
     }
   }, 1000);
@@ -111,10 +114,10 @@ function validateAnswer(isAuto = false) {
   const feedback = createElement("div", "feedback");
   if (answer && answer === correct) {
     score++;
-    correctSound.play();
+    
     feedback.innerText = "✅ Bonne réponse !";
   } else {
-    if (!isAuto) wrongSound.play();
+    if (!isAuto) 
     feedback.innerText = `❌ Mauvaise réponse. La bonne était : ${correct}`;
   }
 
@@ -187,4 +190,3 @@ function showHighScores(container) {
   container.appendChild(createElement("h3", null, "🏆 Meilleurs scores"));
   container.appendChild(table);
 }
-
