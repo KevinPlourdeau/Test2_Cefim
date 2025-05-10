@@ -9,7 +9,7 @@
 }
 
 
-/*    LAYOUT GLOBAL   */
+/*    GLOBAL   */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, var(--secondary-color), #ff995e);
@@ -41,27 +41,24 @@ h1, h2, h3 {
     color: var(--secondary-color);
     transition: color 0.3s ease;
 }
-
 h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
-
 h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
-
 h3 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-
 p {
     font-size: 18px;
     margin-bottom: 30px;
     animation: fadeIn 1.2s ease;
     text-align: justify;
+    line-height: normal;
 }
 
 
@@ -203,19 +200,15 @@ input[type="radio"] {
         padding: 30px;
         margin: 30px;
     }
-
     h1 {
         font-size: 36px;
     }
-
     h2 {
         font-size: 28px;
     }
-
     h3 {
         font-size: 20px;
     }
-
     p {
         font-size: 16px;
     }
@@ -226,21 +219,17 @@ input[type="radio"] {
     }
 }
 
-
 @media (max-width: 480px) {
 
     h1 {
         font-size: 28px;
     }
-
     h2 {
         font-size: 22px;
     }
-
     h3 {
         font-size: 18px;
     }
-
     p {
         font-size: 14px;
     }
