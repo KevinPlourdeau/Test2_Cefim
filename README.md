@@ -5,24 +5,6 @@
 Création d’un mini-quiz interactif à l’aide des langages autorisés :  
 *HTML*, *CSS*, et *JavaScript natif (ES6)*, sans framework ni bibliothèque externe.
 
-## 📂 Structure du projet
-
-Test2_Cefim/
-├── index.html
-├── styles/
-│   ├── reset.css
-│   └── style.css
-├── js/
-│   ├── main.js
-│   ├── utils.js
-│   └── quiz/
-│       ├── quiz.js
-│       ├── timer.js
-│       ├── score.js
-│       └── questions.js
-├── images/
-└── README.md
-
 ## ✅ Fonctionnalités principales
 
 - Introduction au quiz
