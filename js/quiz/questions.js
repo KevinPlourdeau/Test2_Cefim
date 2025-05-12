@@ -1,4 +1,7 @@
-const questions = [
+
+
+// Liste des questions du quiz sous forme d'un tableau d'objets
+export const questions = [
     { 
         question: "Quel langage est principalement utilisé pour structurer une page web ?",
         image: "",

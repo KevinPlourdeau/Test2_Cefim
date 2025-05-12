@@ -193,6 +193,23 @@ input[type="radio"] {
     animation: rainbow 2s linear infinite;
 }
 
+/* BARRE DE PROGRESSION */
+.timer-bar-container {
+  width: 100%;
+  background-color: var(--orange-answers);
+  border-radius: 5px;
+  height: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.timer-bar {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  transition: width 1s linear;
+}
+
 
 /*    MEDIA QUERIES   */
 @media (max-width: 720px) {
@@ -231,6 +248,9 @@ input[type="radio"] {
         font-size: 18px;
     }
     p {
+        font-size: 14px;
+    }
+    label {
         font-size: 14px;
     }
 
