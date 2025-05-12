@@ -32,3 +32,21 @@ Création d’un mini-quiz interactif à l’aide des langages autorisés :
 - **HTML5**  
 - **CSS3** (variables, animations, media queries)  
 - **JavaScript ES6** (modules, `localStorage`, `setInterval`)
+
+
+## 🛠️ Set Up
+
+- Clonez ce dépôt sur votre machine locale : git clone https://github.com/KevinPlourdeau/Test2_Cefim.git  cd nom-du-repo
+
+- Option 1 : double clic sur le fichier index.html 
+- Option 2 : Ouvrer le projet dans VSCode 
+             Installer l'extension live server
+             Ouvrer index.html dans VSCode 
+             En bas de la fenetre VSCode aller sur Go live
+
+Compatibilité navigateur : 
+- Chrome 
+- Firefox
+- Edge
+- Safari
+- Opera

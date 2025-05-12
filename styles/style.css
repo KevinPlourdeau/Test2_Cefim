@@ -163,11 +163,7 @@ input[type="radio"] {
     border-bottom: 1px solid #ddd;
 }
 
-.score-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.score-table tr:hover {
+.score-table td:hover {
     background-color: #f1f1f1;
 }
 
@@ -207,7 +203,7 @@ input[type="radio"] {
   height: 100%;
   width: 100%;
   background-color: var(--primary-color);
-  transition: width 1s linear;
+  transition: width 0.2s linear;
 }
 
 
